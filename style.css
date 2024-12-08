@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: right;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    outline: none;
+}
+
+.nadpis {
+    justify-content: center;
+    text-align: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* tipy na grid a gap jsem našel na netu, tohle konkrétně dělá čtyři tlačítka na řádek */
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.operation {
+    background-color: #FF7F50;
+}
+
+button.operation:hover {
+    background-color: #e67343;
+}
+
+#clear {
+    background-color: #DC3545;
+}
+
+#clear:hover {
+    background-color: #b02a37;
+}
+
+#equals {
+    background-color: #28A745;
+}
+
+#equals:hover {
+    background-color: #218838;
+}
